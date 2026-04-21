@@ -1,2 +1,2 @@
-EXCLUDES="README.md LICENSE extras"
+EXCLUDES="README.md LICENSE"
 DOTFILES_DIRS="$HOME/code/jaisonerick/rpi-dotfiles"

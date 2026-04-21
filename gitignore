@@ -1,0 +1,27 @@
+# Global git ignores for rpi-home (~/.gitignore via [core] excludesfile).
+
+# Editor swap files
+*.swp
+*~
+.*.swo
+
+# macOS cruft (shouldn't appear on Pi, but harmless)
+.DS_Store
+
+# Local/per-machine overrides
+.env.local
+.envrc.local
+.direnv/
+
+# Language runtime caches
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+
+# Tooling
+.tool-versions.local

@@ -1,9 +1,32 @@
 [user]
 	name = Jaison Erick
 	email = jaisonreis@gmail.com
+[init]
+	defaultBranch = main
+[push]
+	default = current
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[rebase]
+	autosquash = true
+[merge]
+	ff = only
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[commit]
+	template = ~/.gitmessage
+[diff]
+	colorMoved = zebra
+[include]
+	path = ~/.gitconfig.local
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
