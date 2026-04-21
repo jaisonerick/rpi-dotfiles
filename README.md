@@ -27,7 +27,7 @@ rpi-dotfiles/
     zshrc            → ~/.zshrc
     zprofile         → ~/.zprofile
     bashrc           → ~/.bashrc
-    extras/CLAUDE.md → ~/CLAUDE.md  (copied, not symlinked — see below)
+    CLAUDE.md        → ~/CLAUDE.md (undotted via rcrc UNDOTTED)
 ```
 
 ## Usage
@@ -66,9 +66,8 @@ degrades gracefully.
 
 ## `CLAUDE.md` placement
 
-`rcm` only manages dotfiles, so `CLAUDE.md` lives under `tag-claude/extras/`
-and the ansible `dotfiles` role copies (not symlinks) it into `~/CLAUDE.md`
-for the claude user. That file is Claude Code project-level memory sourced
+Listed in `rcrc` under `UNDOTTED` so `rcm` symlinks it as `~/CLAUDE.md`
+(without prepending a dot). Claude Code reads this as project-level memory
 when the CLI launches with `cwd=$HOME`.
 
 ## Why not reuse `jaisonerick/laptop/dotfiles/`

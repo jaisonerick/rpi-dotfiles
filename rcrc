@@ -1,2 +1,3 @@
 EXCLUDES="README.md LICENSE"
 DOTFILES_DIRS="$HOME/code/jaisonerick/rpi-dotfiles"
+UNDOTTED="CLAUDE.md"
